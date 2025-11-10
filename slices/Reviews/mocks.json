@@ -1,0 +1,83 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Consider"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Aliquip eu minim in quis eiusmod ullamco. Ea culpa anim est elit et reprehenderit duis incididunt. Cupidatat in adipisicing nulla nostrud enim qui ad aliqua."
+            }
+          }
+        ]
+      },
+      "background_color": {
+        "__TYPE__": "FieldContent",
+        "value": "#3d2091",
+        "type": "Color"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "review",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Occaecat et quis deserunt exercitation laborum cupidatat cupidatat enim tempor. Consequat in et duis."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "name",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "previous",
+              "type": "Text"
+            }
+          ],
+          [
+            "social_media_label",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "lose",
+              "type": "Text"
+            }
+          ],
+          [
+            "social_media_link",
+            {
+              "__TYPE__": "LinkContent",
+              "key": "3fc24771-d879-453d-b794-f29a4725b658",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

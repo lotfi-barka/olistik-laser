@@ -1,0 +1,172 @@
+[
+  {
+    "uid": {
+      "__TYPE__": "UIDContent",
+      "value": "column"
+    },
+    "meta_title": {
+      "__TYPE__": "FieldContent",
+      "value": "capital",
+      "type": "Text"
+    },
+    "meta_description": {
+      "__TYPE__": "FieldContent",
+      "value": "sister",
+      "type": "Text"
+    },
+    "featured_image": {
+      "__TYPE__": "ImageContent",
+      "origin": {
+        "id": "main",
+        "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+        "width": 3456,
+        "height": 3456
+      },
+      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+      "width": 3456,
+      "height": 3456,
+      "edit": {
+        "zoom": 1,
+        "crop": {
+          "x": 0,
+          "y": 0
+        },
+        "background": "transparent"
+      },
+      "alt": "lesson",
+      "thumbnails": {}
+    },
+    "keywords": {
+      "__TYPE__": "FieldContent",
+      "value": "journey",
+      "type": "Text"
+    },
+    "slices": {
+      "__TYPE__": "SliceContentType",
+      "value": [
+        {
+          "key": "hero$194f7975-a07e-4d7b-b1e6-66f9739726f6",
+          "name": "hero",
+          "widget": {
+            "__TYPE__": "SharedSliceContent",
+            "variation": "default",
+            "primary": {
+              "slice_id": {
+                "__TYPE__": "FieldContent",
+                "value": "frighten",
+                "type": "Text"
+              },
+              "title": {
+                "__TYPE__": "StructuredTextContent",
+                "value": [
+                  {
+                    "type": "heading1",
+                    "content": {
+                      "text": "Active"
+                    }
+                  }
+                ]
+              },
+              "text": {
+                "__TYPE__": "StructuredTextContent",
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "content": {
+                      "text": "Magna magna sint nulla do."
+                    }
+                  }
+                ]
+              },
+              "background_image": {
+                "__TYPE__": "ImageContent",
+                "origin": {
+                  "id": "main",
+                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+                  "width": 4160,
+                  "height": 3120
+                },
+                "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+                "width": 4160,
+                "height": 3120,
+                "edit": {
+                  "zoom": 1,
+                  "crop": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "background": "transparent"
+                },
+                "alt": "finally",
+                "thumbnails": {}
+              },
+              "background_color": {
+                "__TYPE__": "FieldContent",
+                "value": "#dc6a20",
+                "type": "Color"
+              }
+            },
+            "items": [
+              {
+                "__TYPE__": "GroupItemContent",
+                "value": [
+                  [
+                    "button_label",
+                    {
+                      "__TYPE__": "FieldContent",
+                      "value": "electric",
+                      "type": "Text"
+                    }
+                  ],
+                  [
+                    "button_url",
+                    {
+                      "__TYPE__": "LinkContent",
+                      "key": "2b162484-7b01-4513-84b7-80c456472e84",
+                      "value": {
+                        "__TYPE__": "ExternalLink",
+                        "url": "https://slicemachine.dev"
+                      }
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "text$5319e4c7-a938-4c1c-b362-1c0d9595241f",
+          "name": "text",
+          "widget": {
+            "__TYPE__": "SharedSliceContent",
+            "variation": "default",
+            "primary": {
+              "slice_id": {
+                "__TYPE__": "FieldContent",
+                "value": "until",
+                "type": "Text"
+              },
+              "text": {
+                "__TYPE__": "StructuredTextContent",
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "content": {
+                      "text": "Deserunt duis laborum laborum cillum consequat nostrud aliquip consequat occaecat reprehenderit. Cupidatat quis est pariatur est. Laborum Lorem enim labore aliqua culpa do adipisicing ut."
+                    }
+                  }
+                ]
+              }
+            },
+            "items": [
+              {
+                "__TYPE__": "GroupItemContent",
+                "value": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

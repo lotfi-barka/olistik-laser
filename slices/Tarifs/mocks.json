@@ -1,0 +1,97 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "slice_id": {
+        "__TYPE__": "FieldContent",
+        "value": "including",
+        "type": "Text"
+      },
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Property"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Duis nisi consectetur laboris eiusmod laborum ut ullamco irure irure Lorem amet. Enim cupidatat est eiusmod. Id exercitation non ex voluptate labore irure aliquip sunt adipisicing dolor minim amet do tempor mollit."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "price_title",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Gently"
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "price_description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Pariatur do aliqua excepteur. Pariatur aliquip dolor sint qui sit non eu consequat commodo incididunt cillum. Deserunt aute non veniam ex nulla sit non est ut occaecat qui tempor laborum esse."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "price",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "harbor",
+              "type": "Text"
+            }
+          ],
+          [
+            "button_label",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "particularly",
+              "type": "Text"
+            }
+          ],
+          [
+            "button_link",
+            {
+              "__TYPE__": "LinkContent",
+              "key": "67a2f1ef-c9a9-4259-88cc-95effacdfac1",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -29,7 +29,9 @@ interface NavigationDocumentData {
      * - **Documentation**: https://prismic.io/docs/core-concepts/group
      *
      */
-    action_group: prismicT.GroupField<Simplify<NavigationDocumentDataActionGroupItem>>;
+    action_group: prismicT.GroupField<
+        Simplify<NavigationDocumentDataActionGroupItem>
+    >;
     /**
      * Slice Zone field in *Navigation*
      *
@@ -129,7 +131,12 @@ type NavigationDocumentDataSlicesSlice = never;
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type NavigationDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<NavigationDocumentData>, "navigation", Lang>;
+export type NavigationDocument<Lang extends string = string> =
+    prismicT.PrismicDocumentWithoutUID<
+        Simplify<NavigationDocumentData>,
+        "navigation",
+        Lang
+    >;
 /** Content for Page documents */
 interface PageDocumentData {
     /**
@@ -192,7 +199,14 @@ interface PageDocumentData {
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = HeroSlice | CtaSlice | CardsSlice | TextWithImageSlice | TarifsSlice | ReviewsSlice | ScriptSlice;
+type PageDocumentDataSlicesSlice =
+    | HeroSlice
+    | CtaSlice
+    | CardsSlice
+    | TextWithImageSlice
+    | TarifsSlice
+    | ReviewsSlice
+    | ScriptSlice;
 /**
  * Page document from Prismic
  *
@@ -202,7 +216,8 @@ type PageDocumentDataSlicesSlice = HeroSlice | CtaSlice | CardsSlice | TextWithI
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
+export type PageDocument<Lang extends string = string> =
+    prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 /** Content for Post documents */
 interface PostDocumentData {
     /**
@@ -275,7 +290,8 @@ type PostDocumentDataSlicesSlice = HeroSlice | TextSlice;
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type PostDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PostDocumentData>, "post", Lang>;
+export type PostDocument<Lang extends string = string> =
+    prismicT.PrismicDocumentWithUID<Simplify<PostDocumentData>, "post", Lang>;
 /** Content for Settings documents */
 interface SettingsDocumentData {
     /**
@@ -430,8 +446,17 @@ type SettingsDocumentDataSlices1Slice = never;
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type SettingsDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<SettingsDocumentData>, "settings", Lang>;
-export type AllDocumentTypes = NavigationDocument | PageDocument | PostDocument | SettingsDocument;
+export type SettingsDocument<Lang extends string = string> =
+    prismicT.PrismicDocumentWithoutUID<
+        Simplify<SettingsDocumentData>,
+        "settings",
+        Lang
+    >;
+export type AllDocumentTypes =
+    | NavigationDocument
+    | PageDocument
+    | PostDocument
+    | SettingsDocument;
 /**
  * Primary content in Cards → Primary
  *
@@ -522,7 +547,11 @@ export interface CardsSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type CardsSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CardsSliceDefaultPrimary>, Simplify<CardsSliceDefaultItem>>;
+export type CardsSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<CardsSliceDefaultPrimary>,
+    Simplify<CardsSliceDefaultItem>
+>;
 /**
  * Slice variation for *Cards*
  *
@@ -627,7 +656,11 @@ export interface CtaSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type CtaSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<CtaSliceDefaultPrimary>, Simplify<CtaSliceDefaultItem>>;
+export type CtaSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<CtaSliceDefaultPrimary>,
+    Simplify<CtaSliceDefaultItem>
+>;
 /**
  * Slice variation for *Cta*
  *
@@ -732,7 +765,11 @@ export interface HeroSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type HeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<HeroSliceDefaultPrimary>, Simplify<HeroSliceDefaultItem>>;
+export type HeroSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<HeroSliceDefaultPrimary>,
+    Simplify<HeroSliceDefaultItem>
+>;
 /**
  * Primary content in Hero → Primary
  *
@@ -797,7 +834,11 @@ interface HeroSliceNoActionHeroPrimary {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type HeroSliceNoActionHero = prismicT.SharedSliceVariation<"noActionHero", Simplify<HeroSliceNoActionHeroPrimary>, never>;
+export type HeroSliceNoActionHero = prismicT.SharedSliceVariation<
+    "noActionHero",
+    Simplify<HeroSliceNoActionHeroPrimary>,
+    never
+>;
 /**
  * Slice variation for *Hero*
  *
@@ -902,7 +943,11 @@ export interface ReviewsSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ReviewsSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ReviewsSliceDefaultPrimary>, Simplify<ReviewsSliceDefaultItem>>;
+export type ReviewsSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<ReviewsSliceDefaultPrimary>,
+    Simplify<ReviewsSliceDefaultItem>
+>;
 /**
  * Slice variation for *Reviews*
  *
@@ -916,7 +961,10 @@ type ReviewsSliceVariation = ReviewsSliceDefault;
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ReviewsSlice = prismicT.SharedSlice<"reviews", ReviewsSliceVariation>;
+export type ReviewsSlice = prismicT.SharedSlice<
+    "reviews",
+    ReviewsSliceVariation
+>;
 /**
  * Primary content in Script → Primary
  *
@@ -941,7 +989,11 @@ interface ScriptSliceDefaultPrimary {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ScriptSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ScriptSliceDefaultPrimary>, never>;
+export type ScriptSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<ScriptSliceDefaultPrimary>,
+    never
+>;
 /**
  * Slice variation for *Script*
  *
@@ -1056,7 +1108,11 @@ export interface TarifsSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type TarifsSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TarifsSliceDefaultPrimary>, Simplify<TarifsSliceDefaultItem>>;
+export type TarifsSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<TarifsSliceDefaultPrimary>,
+    Simplify<TarifsSliceDefaultItem>
+>;
 /**
  * Slice variation for *Tarifs*
  *
@@ -1105,7 +1161,11 @@ interface TextSliceDefaultPrimary {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type TextSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TextSliceDefaultPrimary>, never>;
+export type TextSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<TextSliceDefaultPrimary>,
+    never
+>;
 /**
  * Slice variation for *Text*
  *
@@ -1210,7 +1270,11 @@ export interface TextWithImageSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type TextWithImageSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<TextWithImageSliceDefaultPrimary>, Simplify<TextWithImageSliceDefaultItem>>;
+export type TextWithImageSliceDefault = prismicT.SharedSliceVariation<
+    "default",
+    Simplify<TextWithImageSliceDefaultPrimary>,
+    Simplify<TextWithImageSliceDefaultItem>
+>;
 /**
  * Primary content in TextWithImage → Primary
  *
@@ -1301,12 +1365,18 @@ export interface TextWithImageSliceRightTextItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type TextWithImageSliceRightText = prismicT.SharedSliceVariation<"rightText", Simplify<TextWithImageSliceRightTextPrimary>, Simplify<TextWithImageSliceRightTextItem>>;
+export type TextWithImageSliceRightText = prismicT.SharedSliceVariation<
+    "rightText",
+    Simplify<TextWithImageSliceRightTextPrimary>,
+    Simplify<TextWithImageSliceRightTextItem>
+>;
 /**
  * Slice variation for *TextWithImage*
  *
  */
-type TextWithImageSliceVariation = TextWithImageSliceDefault | TextWithImageSliceRightText;
+type TextWithImageSliceVariation =
+    | TextWithImageSliceDefault
+    | TextWithImageSliceRightText;
 /**
  * TextWithImage Shared Slice
  *
@@ -1315,12 +1385,78 @@ type TextWithImageSliceVariation = TextWithImageSliceDefault | TextWithImageSlic
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type TextWithImageSlice = prismicT.SharedSlice<"text_with_image", TextWithImageSliceVariation>;
+export type TextWithImageSlice = prismicT.SharedSlice<
+    "text_with_image",
+    TextWithImageSliceVariation
+>;
 declare module "@prismicio/client" {
     interface CreateClient {
-        (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
+        (
+            repositoryNameOrEndpoint: string,
+            options?: prismic.ClientConfig,
+        ): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { NavigationDocumentData, NavigationDocumentDataLinksItem, NavigationDocumentDataActionGroupItem, NavigationDocumentDataSlicesSlice, NavigationDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, PostDocumentData, PostDocumentDataSlicesSlice, PostDocument, SettingsDocumentData, SettingsDocumentDataSlicesSlice, SettingsDocumentDataSlices1Slice, SettingsDocument, AllDocumentTypes, CardsSliceDefaultPrimary, CardsSliceDefaultItem, CardsSliceDefault, CardsSliceVariation, CardsSlice, CtaSliceDefaultPrimary, CtaSliceDefaultItem, CtaSliceDefault, CtaSliceVariation, CtaSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceNoActionHeroPrimary, HeroSliceNoActionHero, HeroSliceVariation, HeroSlice, ReviewsSliceDefaultPrimary, ReviewsSliceDefaultItem, ReviewsSliceDefault, ReviewsSliceVariation, ReviewsSlice, ScriptSliceDefaultPrimary, ScriptSliceDefault, ScriptSliceVariation, ScriptSlice, TarifsSliceDefaultPrimary, TarifsSliceDefaultItem, TarifsSliceDefault, TarifsSliceVariation, TarifsSlice, TextSliceDefaultPrimary, TextSliceDefault, TextSliceVariation, TextSlice, TextWithImageSliceDefaultPrimary, TextWithImageSliceDefaultItem, TextWithImageSliceDefault, TextWithImageSliceRightTextPrimary, TextWithImageSliceRightTextItem, TextWithImageSliceRightText, TextWithImageSliceVariation, TextWithImageSlice };
+        export type {
+            NavigationDocumentData,
+            NavigationDocumentDataLinksItem,
+            NavigationDocumentDataActionGroupItem,
+            NavigationDocumentDataSlicesSlice,
+            NavigationDocument,
+            PageDocumentData,
+            PageDocumentDataSlicesSlice,
+            PageDocument,
+            PostDocumentData,
+            PostDocumentDataSlicesSlice,
+            PostDocument,
+            SettingsDocumentData,
+            SettingsDocumentDataSlicesSlice,
+            SettingsDocumentDataSlices1Slice,
+            SettingsDocument,
+            AllDocumentTypes,
+            CardsSliceDefaultPrimary,
+            CardsSliceDefaultItem,
+            CardsSliceDefault,
+            CardsSliceVariation,
+            CardsSlice,
+            CtaSliceDefaultPrimary,
+            CtaSliceDefaultItem,
+            CtaSliceDefault,
+            CtaSliceVariation,
+            CtaSlice,
+            HeroSliceDefaultPrimary,
+            HeroSliceDefaultItem,
+            HeroSliceDefault,
+            HeroSliceNoActionHeroPrimary,
+            HeroSliceNoActionHero,
+            HeroSliceVariation,
+            HeroSlice,
+            ReviewsSliceDefaultPrimary,
+            ReviewsSliceDefaultItem,
+            ReviewsSliceDefault,
+            ReviewsSliceVariation,
+            ReviewsSlice,
+            ScriptSliceDefaultPrimary,
+            ScriptSliceDefault,
+            ScriptSliceVariation,
+            ScriptSlice,
+            TarifsSliceDefaultPrimary,
+            TarifsSliceDefaultItem,
+            TarifsSliceDefault,
+            TarifsSliceVariation,
+            TarifsSlice,
+            TextSliceDefaultPrimary,
+            TextSliceDefault,
+            TextSliceVariation,
+            TextSlice,
+            TextWithImageSliceDefaultPrimary,
+            TextWithImageSliceDefaultItem,
+            TextWithImageSliceDefault,
+            TextWithImageSliceRightTextPrimary,
+            TextWithImageSliceRightTextItem,
+            TextWithImageSliceRightText,
+            TextWithImageSliceVariation,
+            TextWithImageSlice,
+        };
     }
 }

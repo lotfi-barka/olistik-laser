@@ -36,36 +36,16 @@ const TextWithImage: FC<TextWithImageProps> = ({
                 </div>
             </div>
             <div className={`${Style.imageWrapper}`}>
-                {slice.variation === "default" ? (
-                    <Fragment>
-                        {isFilled.image(slice.primary.image) && (
-                            <Image
-                                src={slice.primary.image.url}
-                                alt={
-                                    slice.primary.image.alt ??
-                                    "background image"
-                                }
-                                layout="fill"
-                                objectFit="contain"
-                                quality={70}
-                            />
-                        )}
-                    </Fragment>
-                ) : (
-                    <Fragment>
-                        {isFilled.image(slice.primary.image) && (
-                            <Image
-                                src={slice.primary.image.url}
-                                alt={
-                                    slice.primary.image.alt ??
-                                    "background image"
-                                }
-                                width={380}
-                                height={380}
-                            />
-                        )}
-                    </Fragment>
-                )}
+                <Fragment>
+                    {isFilled.image(slice.primary.image) && (
+                        <Image
+                            src={slice.primary.image.url}
+                            alt={slice.primary.image.alt ?? "background image"}
+                            width={640}
+                            height={360}
+                        />
+                    )}
+                </Fragment>
             </div>
         </section>
     );
