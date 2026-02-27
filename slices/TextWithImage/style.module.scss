@@ -4,6 +4,7 @@
     justify-items: center;
     justify-content: center;
     flex-direction: column-reverse;
+    padding: 90px 10%;
     color: white;
 
     .textWrapper {
@@ -11,13 +12,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 90px 10%;
         ul {
             list-style: inside;
             margin-bottom: 40px;
         }
         h2 {
-            margin-bottom: 40px;
+            padding: 40px 0;
         }
 
         p {
@@ -26,8 +26,8 @@
     }
     .imageWrapper {
         position: relative;
-        margin-top: 90px;
-        // height: 480px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -42,6 +42,10 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        ul {
+            list-style: inside;
+            margin-bottom: 40px;
+        }
         h2 {
             padding: 40px 0;
         }
@@ -62,36 +66,26 @@
     // Style when Text is in the Left Side
     .leftSliceWrapper {
         flex-direction: row;
-        padding-right: 0;
         .textWrapper {
             flex-basis: 50%;
             text-align: left;
+            padding-right: 90px;
         }
         .imageWrapper {
             flex-basis: 50%;
-            padding: 90px 0;
-            display: flex;
-            align-items: center;
-            margin: 90px 0;
         }
     }
 
     // Style when Text is in the Left Side
     .rightSliceWrapper {
         flex-direction: row-reverse;
-        padding: 0;
         .textWrapper {
             text-align: left;
             flex-basis: 50%;
-            padding: 90px 10% 90px 0;
-            h2 {
-                padding-top: 0;
-            }
+            padding-left: 90px;
         }
         .imageWrapper {
             flex-basis: 50%;
-            justify-items: center;
-            align-items: center;
         }
     }
 }

@@ -1,0 +1,71 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "slice_id": {
+        "__TYPE__": "FieldContent",
+        "value": "halfway",
+        "type": "Text"
+      },
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "Record"
+            }
+          }
+        ]
+      },
+      "text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Minim anim in duis dolor ipsum veniam fugiat laboris laboris pariatur fugiat cillum fugiat. Officia culpa anim pariatur minim qui. Labore ad dolor mollit nisi."
+            }
+          }
+        ]
+      },
+      "sub_text": {
+        "__TYPE__": "FieldContent",
+        "value": "come",
+        "type": "Text"
+      },
+      "background_color": {
+        "__TYPE__": "FieldContent",
+        "value": "#002941",
+        "type": "Color"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "button_label",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "continent",
+              "type": "Text"
+            }
+          ],
+          [
+            "button_url",
+            {
+              "__TYPE__": "LinkContent",
+              "key": "1209dff6-5025-469c-b996-e2522ab9fb36",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

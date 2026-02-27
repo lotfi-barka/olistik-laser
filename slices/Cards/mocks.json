@@ -1,0 +1,89 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "slice_id": {
+        "__TYPE__": "FieldContent",
+        "value": "leader",
+        "type": "Text"
+      },
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Blind"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Ut veniam eiusmod tempor minim elit elit sit in proident eu adipisicing."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ut voluptate incididunt ea dolor ex amet ipsum velit laboris sit irure nostrud amet aliqua. Esse Lorem fugiat occaecat magna proident cillum anim. Ad consequat exercitation officia aliquip."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "description",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Proident pariatur in in consectetur laborum velit anim laborum sint consequat occaecat."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "button_label",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "band",
+              "type": "Text"
+            }
+          ],
+          [
+            "button_url",
+            {
+              "__TYPE__": "LinkContent",
+              "key": "e50c9b8d-3d6a-4951-8113-ded9efd82527",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

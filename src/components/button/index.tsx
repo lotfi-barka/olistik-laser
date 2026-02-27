@@ -3,6 +3,7 @@ import Style from "./style.module.scss";
 import { PrismicLink } from "@prismicio/react";
 import { LinkField } from "@prismicio/types";
 import { asLink } from "@prismicio/helpers";
+import { FilledLink } from "@customtypes/common";
 
 interface MyButtonProps {
     variant: boolean;
@@ -17,7 +18,6 @@ export const MyButton: FC<MyButtonProps> = ({
     children,
 }) => {
     const flatLink = asLink(link);
-    console.log(flatLink);
     if (flatLink?.startsWith("//popup:")) {
         const popupParams = flatLink
             .replace("//popup:", "")
@@ -48,7 +48,7 @@ export const MyButton: FC<MyButtonProps> = ({
     }
     return (
         <PrismicLink
-            field={link}
+            field={link as FilledLink}
             className={
                 variant ? `${Style.ButtonPink}` : `${Style.ButtonTransparent}`
             }

@@ -70,7 +70,7 @@ const BLogList: FC<BlogListProps> = ({ posts, title }: BlogListProps) => {
                             {posts.map((post, i: number) => {
                                 return (
                                     <div key={i} className={`${Style.card}`}>
-                                        <Link href={"/blog/" + post.uid ?? ""}>
+                                        <Link href={"/blog/" + post.uid}>
                                             <a>
                                                 <div
                                                     className={`${Style.image}`}
