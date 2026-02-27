@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { PrismicRichText } from "@prismicio/react";
-import { CtaSlice } from "@customtypes/rest";
+import { CtaSlice } from "prismicio-types";
 
 import Style from "./style.module.scss";
 import { MyButton } from "@components/button";

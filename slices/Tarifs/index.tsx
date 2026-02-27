@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
-import { TarifsSlice } from "@customtypes/rest";
+import { TarifsSlice } from "prismicio-types";
 import Style from "./style.module.scss";
 import { MyButton } from "@components/button";
 interface TarifsProps {

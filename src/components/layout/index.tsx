@@ -1,7 +1,7 @@
 import GoTop from "@components/GoTop/GoTop";
 import { Header } from "@components/header";
 import { PageSeo } from "@customtypes/common";
-import { NavigationDocument } from "@customtypes/rest";
+import { NavigationDocument } from "prismicio-types";
 import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
 import React, { FC, ReactNode } from "react";

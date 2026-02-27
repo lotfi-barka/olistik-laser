@@ -1,6 +1,6 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { SliceZone } from "@prismicio/react";
+import { SliceLike, SliceZone, SliceZoneLike } from "@prismicio/react";
 import { components } from "../slices/";
 import { GetStaticProps, NextPage } from "next";
 import { Layout } from "@components/layout";
@@ -10,7 +10,7 @@ import {
     PageDocument,
     PostDocument,
     SettingsDocument,
-} from "@customtypes/rest";
+} from "prismicio-types";
 import { createRestClient } from "@services/client";
 import BLogList from "@components/Blog/BlogList";
 import { Query } from "@prismicio/types";
@@ -34,7 +34,14 @@ const Home: NextPage<IProps> = ({
                 src="https://widget.agenda.ch/javascripts/widget_over_2.js"
                 strategy="afterInteractive"
             />
-            <SliceZone slices={home.data.slices} components={components} />
+            <SliceZone
+                slices={
+                    home.data.slices as
+                        | SliceZoneLike<SliceLike<string>>
+                        | undefined
+                }
+                components={components}
+            />
             <BLogList posts={posts.results} title={"Blog"} />
         </Layout>
     );

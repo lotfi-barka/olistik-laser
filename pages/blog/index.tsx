@@ -10,7 +10,7 @@ import {
     PageDocument,
     PostDocument,
     SettingsDocument,
-} from "@customtypes/rest";
+} from "prismicio-types";
 import { createRestClient } from "@services/client";
 import BlogPage from "@components/Blog/BlogPage";
 import { Query } from "@prismicio/types";

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Style from "./style.module.scss";
 // import { useMediaQuery } from "@chakra-ui/react";
-import { PostDocument } from "@customtypes/rest";
+import { PostDocument } from "prismicio-types";
 import { isFilled } from "@prismicio/helpers";
 interface BlogListProps {
     posts: PostDocument[];

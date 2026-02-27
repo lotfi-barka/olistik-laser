@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { PrismicRichText } from "@prismicio/react";
-import { CardsSlice } from "@customtypes/rest";
+import { CardsSlice } from "prismicio-types";
 import Style from "./style.module.scss";
 import {
     Accordion,
