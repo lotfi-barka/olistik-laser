@@ -57,7 +57,9 @@ const Reviews: FC<ReviewsProps> = ({ slice }: ReviewsProps) => {
                             <p>
                                 {_item.name}
                                 {" - "}
-                                <PrismicLink field={_item.social_media_link}>
+                                <PrismicLink
+                                    field={_item.social_media_link as any}
+                                >
                                     {_item.social_media_label}
                                 </PrismicLink>
                             </p>

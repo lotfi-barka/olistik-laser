@@ -2,8 +2,8 @@ import React, { FC, ReactNode } from "react";
 import Style from "./style.module.scss";
 import { PrismicLink } from "@prismicio/react";
 import { LinkField } from "@prismicio/types";
-import { asLink } from "@prismicio/helpers";
 import { FilledLink } from "@customtypes/common";
+import { asLink } from "@prismicio/client";
 
 interface MyButtonProps {
     variant: boolean;
@@ -17,7 +17,7 @@ export const MyButton: FC<MyButtonProps> = ({
     link,
     children,
 }) => {
-    const flatLink = asLink(link);
+    const flatLink = asLink(link as any);
     if (flatLink?.startsWith("//popup:")) {
         const popupParams = flatLink
             .replace("//popup:", "")

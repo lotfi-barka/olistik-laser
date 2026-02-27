@@ -6,7 +6,7 @@ import Carousel from "nuka-carousel";
 import { useMediaQuery } from "@chakra-ui/react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { PostDocument } from "prismicio-types";
-import { isFilled } from "@prismicio/helpers";
+import { isFilled } from "@prismicio/client";
 interface BlogListProps {
     posts: PostDocument[];
     title: string;

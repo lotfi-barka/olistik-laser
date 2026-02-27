@@ -1,5 +1,4 @@
-import { LinkResolverFunction } from "@prismicio/helpers";
-
+import { LinkResolverFunction } from "@prismicio/client";
 import {
     FilledLinkToDocumentField,
     FilledLinkToWebField,

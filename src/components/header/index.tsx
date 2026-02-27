@@ -10,8 +10,8 @@ import { IoClose } from "react-icons/io5";
 import { FilledLink } from "@customtypes/common";
 import { NavigationDocument } from "prismicio-types";
 import { ImageField } from "@prismicio/types";
-import { isFilled } from "@prismicio/helpers";
 import { linkResolver } from "prismicio";
+import { isFilled } from "@prismicio/client";
 
 interface HeaderProps {
     navigation: NavigationDocument;

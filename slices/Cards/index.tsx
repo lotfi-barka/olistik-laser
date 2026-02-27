@@ -12,8 +12,8 @@ import {
 } from "@chakra-ui/react";
 import { MyButton } from "@components/button";
 import { BsChevronRight } from "react-icons/bs";
-import { asText } from "@prismicio/helpers";
 import { RichTextField } from "@prismicio/types";
+import { asText } from "@prismicio/client";
 
 interface CardsProps {
     slice: CardsSlice;

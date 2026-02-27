@@ -1,6 +1,6 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { SliceZone } from "@prismicio/react";
+import { SliceLike, SliceZone, SliceZoneLike } from "@prismicio/react";
 import { components } from "../../slices/";
 import { GetStaticProps, NextPage } from "next";
 import { Layout } from "@components/layout";
@@ -30,7 +30,14 @@ const Blog: NextPage<IProps> = ({
 }: IProps) => {
     return (
         <Layout navigation={navigation} settings={mapPageSeo(page, settings)}>
-            <SliceZone slices={page.data.slices} components={components} />
+            <SliceZone
+                slices={
+                    page.data.slices as
+                        | SliceZoneLike<SliceLike<string>>
+                        | undefined
+                }
+                components={components}
+            />
             <BlogPage posts={posts.results} />
         </Layout>
     );

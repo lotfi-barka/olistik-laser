@@ -1,5 +1,5 @@
 import React from "react";
-import { SliceZone } from "@prismicio/react";
+import { SliceLike, SliceZone, SliceZoneLike } from "@prismicio/react";
 
 import { components } from "../../slices";
 import { createRestClient } from "@services/client";
@@ -29,7 +29,14 @@ const Page: NextPage<IProps> = ({
 }: IProps) => {
     return (
         <Layout navigation={navigation} settings={mapPageSeo(post, settings)}>
-            <SliceZone slices={post.data.slices} components={components} />
+            <SliceZone
+                slices={
+                    post.data.slices as
+                        | SliceZoneLike<SliceLike<string>>
+                        | undefined
+                }
+                components={components}
+            />
             <BLogList posts={posts.results} title={"Dernières nouvelles"} />
         </Layout>
     );

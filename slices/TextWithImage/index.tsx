@@ -4,7 +4,7 @@ import Image from "next/image";
 import Style from "./style.module.scss";
 import { MyButton } from "@components/button";
 import { TextWithImageSlice } from "prismicio-types";
-import { isFilled } from "@prismicio/helpers";
+import { isFilled } from "@prismicio/client";
 interface TextWithImageProps {
     slice: TextWithImageSlice;
 }

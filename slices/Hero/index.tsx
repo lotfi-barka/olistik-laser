@@ -5,7 +5,7 @@ import Style from "./style.module.scss";
 import { MyButton } from "@components/button";
 import { css } from "@emotion/css";
 import { BackgroundPrismic } from "@components/Images/Background";
-import { isFilled } from "@prismicio/helpers";
+import { isFilled } from "@prismicio/client";
 
 interface HeroProps {
     slice: HeroSlice;
