@@ -3,7 +3,7 @@ import { PrismicLink, PrismicRichText } from "@prismicio/react";
 import Style from "./style.module.scss";
 import Carousel from "nuka-carousel";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { ReviewsSlice } from "@customtypes/rest";
+import { ReviewsSlice } from "prismicio-types";
 
 interface ReviewsProps {
     slice: ReviewsSlice;

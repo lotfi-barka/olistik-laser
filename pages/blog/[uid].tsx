@@ -10,7 +10,7 @@ import {
     NavigationDocument,
     PostDocument,
     SettingsDocument,
-} from "@customtypes/rest";
+} from "prismicio-types";
 import BLogList from "@components/Blog/BlogList";
 import { Query } from "@prismicio/types";
 

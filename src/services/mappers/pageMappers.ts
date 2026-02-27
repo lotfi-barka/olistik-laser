@@ -1,10 +1,6 @@
 import { PageSeo } from "src/types/common";
 import { pageResolver } from "prismicio";
-import {
-    PageDocument,
-    PostDocument,
-    SettingsDocument,
-} from "@customtypes/rest";
+import { PageDocument, PostDocument, SettingsDocument } from "prismicio-types";
 
 export const mapPageSeo = (
     page: PageDocument | PostDocument,

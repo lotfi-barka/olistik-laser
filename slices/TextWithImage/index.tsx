@@ -3,7 +3,7 @@ import { PrismicRichText } from "@prismicio/react";
 import Image from "next/image";
 import Style from "./style.module.scss";
 import { MyButton } from "@components/button";
-import { TextWithImageSlice } from "@customtypes/rest";
+import { TextWithImageSlice } from "prismicio-types";
 import { isFilled } from "@prismicio/helpers";
 interface TextWithImageProps {
     slice: TextWithImageSlice;
